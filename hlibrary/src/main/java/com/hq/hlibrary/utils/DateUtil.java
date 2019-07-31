@@ -2,7 +2,6 @@
 package com.hq.hlibrary.utils;
 
 import android.annotation.SuppressLint;
-
 import com.blankj.utilcode.util.LogUtils;
 
 import java.text.DateFormat;

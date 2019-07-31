@@ -1,24 +1,15 @@
 package com.hq.hlibrary.net.rx;
 
 import com.blankj.utilcode.util.LogUtils;
+import okhttp3.*;
+import okhttp3.internal.platform.Platform;
+import okio.Buffer;
+import okio.BufferedSource;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.UnsupportedCharsetException;
 import java.util.concurrent.TimeUnit;
-
-import okhttp3.Connection;
-import okhttp3.Headers;
-import okhttp3.Interceptor;
-import okhttp3.MediaType;
-import okhttp3.Protocol;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-import okhttp3.ResponseBody;
-import okhttp3.internal.platform.Platform;
-import okio.Buffer;
-import okio.BufferedSource;
 
 import static java.net.HttpURLConnection.HTTP_NOT_MODIFIED;
 import static java.net.HttpURLConnection.HTTP_NO_CONTENT;

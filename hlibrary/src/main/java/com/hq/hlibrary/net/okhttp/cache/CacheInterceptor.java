@@ -4,13 +4,12 @@ package com.hq.hlibrary.net.okhttp.cache;
 import com.example.library.utils.HttpUtils;
 import com.example.library.utils.NetworkConnectionUtils;
 import com.hq.hlibrary.utils.AppInfoUtils;
-
-import java.io.IOException;
-
 import okhttp3.CacheControl;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
+
+import java.io.IOException;
 
 
 /**

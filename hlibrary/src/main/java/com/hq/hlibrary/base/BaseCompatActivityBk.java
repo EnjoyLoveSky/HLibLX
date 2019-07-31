@@ -10,14 +10,12 @@ import android.graphics.PixelFormat;
 import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
+import android.view.*;
 import android.view.inputmethod.InputMethodManager;
-
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.Toolbar;
+import butterknife.ButterKnife;
 import com.blankj.utilcode.util.ActivityUtils;
 import com.example.library.utils.NetworkConnectionUtils;
 import com.hq.hlibrary.GlobalApplication;
@@ -25,11 +23,6 @@ import com.hq.hlibrary.R;
 import com.hq.hlibrary.utils.AppInfoUtils;
 
 import java.lang.ref.WeakReference;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.Toolbar;
-import butterknife.ButterKnife;
 
 
 /**

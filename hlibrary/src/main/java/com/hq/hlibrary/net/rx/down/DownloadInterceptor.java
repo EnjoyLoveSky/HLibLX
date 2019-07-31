@@ -1,9 +1,9 @@
 package com.hq.hlibrary.net.rx.down;
 
-import java.io.IOException;
-
 import okhttp3.Interceptor;
 import okhttp3.Response;
+
+import java.io.IOException;
 
 /**
  * @author ruowuming

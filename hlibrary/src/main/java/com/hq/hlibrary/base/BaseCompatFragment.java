@@ -10,20 +10,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.hq.hlibrary.R;
-import com.trello.rxlifecycle3.components.support.RxFragment;
-
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
 import androidx.annotation.LayoutRes;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import com.hq.hlibrary.R;
+import com.trello.rxlifecycle3.components.support.RxFragment;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import kotlin.TypeCastException;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @author ruowuming

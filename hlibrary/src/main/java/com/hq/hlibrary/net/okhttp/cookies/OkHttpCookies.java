@@ -1,11 +1,11 @@
 package com.hq.hlibrary.net.okhttp.cookies;
 
+import okhttp3.Cookie;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-
-import okhttp3.Cookie;
 
 
 public class OkHttpCookies implements Serializable {

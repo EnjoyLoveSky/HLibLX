@@ -15,15 +15,12 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-
+import androidx.core.app.ActivityCompat;
 import com.hq.hlibrary.GlobalApplication;
-
+import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
-
-import androidx.core.app.ActivityCompat;
-import kotlin.jvm.internal.Intrinsics;
 
 /**
  * @author ruowuming

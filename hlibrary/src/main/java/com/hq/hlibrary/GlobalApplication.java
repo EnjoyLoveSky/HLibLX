@@ -3,7 +3,6 @@ package com.hq.hlibrary;
 import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
-
 import com.blankj.utilcode.util.Utils;
 import com.hq.hlibrary.net.BaseNetProvider;
 import com.hq.hlibrary.net.NetManage;

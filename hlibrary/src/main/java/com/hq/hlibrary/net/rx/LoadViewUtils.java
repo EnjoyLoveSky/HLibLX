@@ -2,9 +2,7 @@ package com.hq.hlibrary.net.rx;
 
 import android.content.Context;
 import android.content.DialogInterface;
-
 import com.hq.hlibrary.R;
-
 import io.reactivex.disposables.Disposable;
 
 /**

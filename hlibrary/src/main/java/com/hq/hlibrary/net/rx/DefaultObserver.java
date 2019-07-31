@@ -1,17 +1,15 @@
 package com.hq.hlibrary.net.rx;
 
 import android.content.Context;
-
 import com.hq.hlibrary.utils.ToastUtilX;
 import com.trello.rxlifecycle3.components.support.RxAppCompatActivity;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 import java.lang.ref.SoftReference;
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
-
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 
 /**
  * @author ruowuming

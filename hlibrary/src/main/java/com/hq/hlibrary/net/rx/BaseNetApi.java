@@ -1,15 +1,12 @@
 package com.hq.hlibrary.net.rx;
 
 import android.text.TextUtils;
-
 import com.trello.rxlifecycle3.components.support.RxAppCompatActivity;
-
-
-import java.lang.ref.SoftReference;
-
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 import retrofit2.Retrofit;
+
+import java.lang.ref.SoftReference;
 
 
 /**

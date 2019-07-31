@@ -1,10 +1,9 @@
 package com.hq.hlibrary.net.okhttp.cache;
 
 import com.hq.hlibrary.utils.AppInfoUtils;
+import okhttp3.Cache;
 
 import java.io.File;
-
-import okhttp3.Cache;
 
 /**
  */

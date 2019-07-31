@@ -1,17 +1,16 @@
 package com.hq.hlibrary.net.rx;
 
 import android.content.Context;
-
-import java.io.File;
-import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
-
 import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import java.io.File;
+import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author ruowuming

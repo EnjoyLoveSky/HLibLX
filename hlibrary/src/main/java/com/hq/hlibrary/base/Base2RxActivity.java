@@ -9,16 +9,14 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import com.blankj.utilcode.util.ActivityUtils;
 import com.hq.hlibrary.R;
 import com.trello.rxlifecycle3.components.support.RxAppCompatActivity;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
  * 基类Activity

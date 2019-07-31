@@ -10,13 +10,11 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
-
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import com.hq.hlibrary.R;
 import com.trello.rxlifecycle3.components.RxFragment;
 import com.trello.rxlifecycle3.components.support.RxAppCompatActivity;
-
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 
 /**

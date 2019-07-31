@@ -1,14 +1,9 @@
 package com.hq.hlibrary.net.rx;
 
 import android.util.Log;
-
 import com.hq.hlibrary.net.rx.upload.UploadInterceptor;
 import com.hq.hlibrary.net.rx.upload.UploadProgressListener;
 import com.trello.rxlifecycle3.android.ActivityEvent;
-
-import java.lang.ref.SoftReference;
-import java.util.concurrent.TimeUnit;
-
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
@@ -16,6 +11,9 @@ import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import java.lang.ref.SoftReference;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author ruowuming

@@ -6,14 +6,13 @@ import com.hq.hlibrary.net.okhttp.cache.CacheInterceptor;
 import com.hq.hlibrary.net.okhttp.cache.HttpCache;
 import com.hq.hlibrary.net.okhttp.cookies.CookieManger;
 import com.hq.hlibrary.utils.AppInfoUtils;
-
-import java.util.concurrent.TimeUnit;
-
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  */

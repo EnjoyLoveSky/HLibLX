@@ -3,17 +3,6 @@ package com.hq.hlibrary.net.rx.down;
 import com.hq.hlibrary.net.rx.HttpsUtils;
 import com.hq.hlibrary.net.rx.RetryWhenNetworkException;
 import com.hq.hlibrary.net.rx.TimeException;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.RandomAccessFile;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
-import java.util.concurrent.TimeUnit;
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
@@ -23,6 +12,11 @@ import okhttp3.ResponseBody;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import java.io.*;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 下载
