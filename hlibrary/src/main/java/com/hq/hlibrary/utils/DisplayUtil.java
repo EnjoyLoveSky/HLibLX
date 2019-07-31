@@ -1,7 +1,6 @@
 package com.hq.hlibrary.utils;
 
 import android.content.Context;
-import android.graphics.*;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;

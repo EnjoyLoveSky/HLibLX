@@ -3,7 +3,6 @@ package com.hq.hlibrary.net.rx;
 import android.annotation.SuppressLint;
 import android.util.Log;
 
-import javax.net.ssl.*;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
