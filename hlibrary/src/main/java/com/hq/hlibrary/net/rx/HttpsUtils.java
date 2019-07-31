@@ -3,6 +3,7 @@ package com.hq.hlibrary.net.rx;
 import android.annotation.SuppressLint;
 import android.util.Log;
 
+import javax.net.ssl.*;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -28,7 +29,7 @@ public class HttpsUtils {
         SSLSocketFactory sSLSocketFactory = null;
         try {
             SSLContext sc = SSLContext.getInstance("TLS");
-            sc.init(null, new TrustManager[]{new TrustAllManager()},
+            sc.init(null, new TrustAllManager[]{new TrustAllManager()},
                     new SecureRandom());
             sSLSocketFactory = sc.getSocketFactory();
         } catch (Exception e) {
@@ -66,7 +67,7 @@ public class HttpsUtils {
      */
     public static SSLContext overlockCard()
     {
-        final TrustManager[] trustAllCerts = new TrustManager[]{new X509TrustManager()
+        final X509TrustManager[] trustAllCerts = new X509TrustManager[]{new X509TrustManager()
         {
             @Override
             public void checkClientTrusted(X509Certificate[] chain, String authType) throws
