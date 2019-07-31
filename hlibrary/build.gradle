@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "0.1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            debuggable false
+            //是否启动代码混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            debuggable true
+            //是否启动代码混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation rootProject.ext.dependencies["appcompat"]
+    implementation rootProject.ext.dependencies["constraint-layout"]
+    implementation rootProject.ext.dependencies["kotlin_stdlib"]
+    api rootProject.ext.dependencies["kotlin_coroutines"]
+    api rootProject.ext.dependencies["jetpack_lifecycle_extensions"]
+    api rootProject.ext.dependencies["jetpack_viewmodel_ktx"]
+
+    api rootProject.ext.dependencies["design"]
+
+    //rx
+    api rootProject.ext.dependencies["rxbinding"]
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["converter-gson"]
+    api rootProject.ext.dependencies["adapter-rxjava"]
+    api rootProject.ext.dependencies["rxandroid"]
+    api rootProject.ext.dependencies["logging-interceptor"]
+//    implementation rootProject.ext.dependencies["rxjava"]
+    api rootProject.ext.dependencies["rxlifecycle-components"]
+
+    api rootProject.ext.dependencies["utilcode"]
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
+    implementation rootProject.ext.dependencies["cookie_jar"]
+
+
+}
